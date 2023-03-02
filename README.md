@@ -1,36 +1,33 @@
-# Traffic
+# Harvard University CS50’s Introduction to Artificial Intelligence with Python
 
-I started with a simple convolutional neural network, as the one on the lecture code, with the following structure:
-* A convolutional layer. Learn 32 filters using a 3x3 kernel
-* A max-pooling layer, using a 2x2 pool size
-* A hidden layer with 128 units
-* A dropout rate of 0.5 to prevent overfitting
-
-This base model performed very poorly, with only 0.0548 accuracy and a high loss score.
-
-With the goal of finding a model with the best testing accuracy, I then tested different modifications to the base model.
-
-These are my experiment results:
-
-|# | Modification | Testing accuracy|
-|--|--------------|-----------------|
-|1 | Base model   | 0.0548|
-|2 | Add second convolutional layer, identical to the first | 0.9702|
-|3 | Add second maxpooling layer (after the second convolutional layer), identical to the first | 0.9506|
-|4 | Remove second maxpooling layer, increase kernal size in second convolutional layer to (4, 4) | 0.9448|
-|5 | Double number of filters (to 64) in second convolutional layer | 0.9637|
-|6 | Double number of filters (to 64) in the two convolutional layer | 0.9479|
-|7 | Add second maxpooling layer (after the second convolutional layer), using a 3x3 pool size | 0.9195|
-|8 | Change the pool size from 2x2 to 3x3 in the first maxpooling layer | 0.9550|
-|9 | Add second hidden layer (both layers with 128 units) | 0.9383|
-|10 | Decrease dropout rate to 0.3 | 0.9662|
-
-Just by adding a second convolutional layer, the accuracy score improved to 0.9702 and none of the other tested models were able to top this accuracy score.
+https://cs50.harvard.edu/ai/2020/
 
 
-After these modifications, trying to maximise the accuracy score, my final convolutional neural network is made of:
-* First convolutional layer. Learn 32 filters using a 3x3 kernel
-* A max-pooling layer, using a 2x2 pool size
-* Second convolutional layer. Learn 32 filters using a 3x3 kernel
-* A hidden layer with 128 units
-* A dropout rate of 0.5 to prevent overfitting
+
+### This course explores the concepts and algorithms at the foundation of modern artificial intelligence, diving into the ideas that give rise to technologies like game-playing engines, handwriting recognition, and machine translation. Through hands-on projects, students gain exposure to the theory behind graph search algorithms, classification, optimization, reinforcement learning, and other topics in artificial intelligence and machine learning as they incorporate them into their own Python programs. By course’s end, students emerge with experience in libraries for machine learning as well as knowledge of artificial intelligence principles that enable them to design intelligent systems of their own.
+
+
+ 
+## STATUS
+Completed successfully and certificate obtained 
+
+## PROJECT :
+  
+    0a - Write a program that determines how many “degrees of separation” apart two actors are.    
+    0b - Using Minimax, implement an AI to play Tic-Tac-Toe optimally.  
+ 
+    1a - Write a program to solve logic puzzles.    
+    1b - Write an AI to play Minesweeper.     
+    
+    2a - Write an AI to rank web pages by importance.    
+    2b - Write an AI to assess the likelihood that a person will have a particular genetic trait.  
+    
+    3 - Write an AI to generate crossword puzzles.   
+    
+    4a - Write an AI to predict whether online shopping customers will complete a purchase.  
+    4b - Write an AI that teaches itself to play Nim through reinforcement learning.      
+    
+    5 - Write an AI to identify which traffic sign appears in a photograph.  
+ 
+    6a - Write an AI to parse sentences and extract noun phrases.  
+    6b - Write an AI to answer questions.    
